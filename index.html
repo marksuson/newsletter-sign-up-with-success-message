@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Tomato: "hsl(4, 100%, 67%)",
+              Dark_Slate_Grey: "hsl(234, 29%, 20%)",
+              Charcoal_Grey: "hsl(235, 18%, 26%)",
+              Grey: "hsl(231, 7%, 60%)",
+              White: "hsl(0, 0%, 100%)",
+              Pale_Navy: "#36384D",
+              Dark_Navy: "#242742",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="bg-Pale_Navy md:h-screen md:grid md:place-content-center">
+    <main
+      class="bg-White max-w-[928px] max-h-[640px] grid grid-cols-2 gap-20 rounded-[36px]"
+    >
+      <div class="flex flex-col mt-[98px] ml-16">
+        <h1 class="text-[3.5rem] text-Dark_Navy font-bold mb-6">
+          Stay updated!
+        </h1>
+        <p class="mb-6 text-Dark_Navy text-base font-normal">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li class="flex mb-2.5 text-Dark_Navy text-base font-normal">
+            <span class="mr-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="tomato colored circle with white check mark"
+              />
+            </span>
+            Product discovery and building what matters
+          </li>
+          <li class="flex mb-2.5 text-Dark_Navy text-base font-normal">
+            <span class="mr-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="tomato colored circle with white check mark"
+              />
+            </span>
+            Measuring to ensure updates are a success
+          </li>
+          <li class="flex mb-10 text-Dark_Navy text-base font-normal">
+            <span class="mr-4">
+              <img
+                src="./assets/images/icon-list.svg"
+                alt="tomato colored circle with white check mark"
+              />
+            </span>
+            And much more!
+          </li>
+        </ul>
+        <label for="email" class="text-Dark_Navy text-xs font-bold mb-2"
+          >Email Address</label
+        >
+        <input
+          type="email"
+          placeholder="email@company.com"
+          class="border border-Charcoal_Grey rounded-lg px-4 py-4 mb-6 text-Dark_Navy text-base font-normal"
+        />
+        <button
+          type="button"
+          class="rounded-lg bg-Dark_Navy text-white py-4 mb-[98px]"
+        >
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div>
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="modern art fill image"
+          class="md:mr-6 md:my-6"
+        />
+      </div>
+    </main>
+    <footer class="text-white mt-10 flex justify-between">
+      <p class="challenge">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+      </p>
+      <p class="coded">Coded by <a href="#">Mark Suson</a></p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- Email address email@company.com Subscribe to monthly newsletter Thanks for
+subscribing! A confirmation email has been sent to ash@loremcompany.com. Please
+open it and click the button inside to confirm your subscription. Dismiss
+message -->
