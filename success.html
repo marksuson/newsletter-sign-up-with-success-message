@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Submit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Tomato: "hsl(4, 100%, 67%)",
+              Dark_Slate_Grey: "hsl(234, 29%, 20%)",
+              Charcoal_Grey: "hsl(235, 18%, 26%)",
+              Grey: "hsl(231, 7%, 60%)",
+              White: "hsl(0, 0%, 100%)",
+              Pale_Navy: "#36384D",
+              Dark_Navy: "#242742",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body class="bg-Pale_Navy md:h-screen md:grid md:place-content-center">
+    <main class="bg-White max-w-[504px] rounded-[36px]">
+      <section class="flex flex-col mx-16">
+        <img
+          src="./assets/images/icon-list.svg"
+          alt="tomato colored circle with white check mark"
+          class="w-16 h-16 mt-12 mb-10"
+        />
+        <h1 class="text-[3.5rem] leading-none text-Dark_Navy font-bold mb-6">
+          Thanks for Subscribing!
+        </h1>
+        <p
+          id="success-message"
+          class="mb-10 text-Dark_Navy text-base font-normal"
+        >
+          A confirmation email has been sent to {email address}. Please open it
+          and click the link to confirm your subscription.
+        </p>
+        <button
+          id="dismiss-button"
+          type="button"
+          class="rounded-lg bg-Dark_Navy text-white py-4 mb-16 hover:bg-Tomato hover:text-white transition duration-300 ease-in-out"
+        >
+          Dismiss Message
+        </button>
+      </section>
+    </main>
+    <script src="success.js"></script>
+  </body>
+</html>

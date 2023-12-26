@@ -39,9 +39,9 @@
   </head>
   <body class="bg-Pale_Navy md:h-screen md:grid md:place-content-center">
     <main
-      class="bg-White max-w-[928px] max-h-[640px] grid grid-cols-2 gap-20 rounded-[36px]"
+      class="bg-White max-w-[928px] max-h-[640px] mt-6 grid grid-cols-2 gap-20 rounded-[36px]"
     >
-      <div class="flex flex-col mt-[98px] ml-16">
+      <section class="flex flex-col mt-[98px] ml-16">
         <h1 class="text-[3.5rem] text-Dark_Navy font-bold mb-6">
           Stay updated!
         </h1>
@@ -77,30 +77,41 @@
             And much more!
           </li>
         </ul>
-        <label for="email" class="text-Dark_Navy text-xs font-bold mb-2"
-          >Email Address</label
-        >
-        <input
-          type="email"
-          placeholder="email@company.com"
-          class="border border-Charcoal_Grey rounded-lg px-4 py-4 mb-6 text-Dark_Navy text-base font-normal"
-        />
-        <button
-          type="button"
-          class="rounded-lg bg-Dark_Navy text-white py-4 mb-[98px]"
-        >
-          Subscribe to monthly newsletter
-        </button>
-      </div>
-      <div>
+        <form id="form" class="flex flex-col">
+          <fieldset class="flex justify-between items-center">
+            <label for="email" class="text-Dark_Navy text-xs font-bold mb-2"
+              >Email Address</label
+            >
+            <span
+              id="email-error"
+              class="text-right text-Tomato text-xs font-bold mb-2 hidden"
+              >Valid email required</span
+            >
+          </fieldset>
+          <input
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+            class="border border-Charcoal_Grey rounded-lg px-4 py-4 mb-6 text-Dark_Navy text-base font-normal"
+            required
+          />
+          <button
+            id="subscribe-button"
+            class="rounded-lg bg-Dark_Navy text-white py-4 mb-[98px] hover:bg-Tomato hover:text-white transition duration-300 ease-in-out"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </section>
+      <section>
         <img
           src="./assets/images/illustration-sign-up-desktop.svg"
           alt="modern art fill image"
           class="md:mr-6 md:my-6"
         />
-      </div>
+      </section>
     </main>
-    <footer class="text-white mt-10 flex justify-between">
+    <footer class="text-white mt-6 flex justify-between">
       <p class="challenge">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
