@@ -39,10 +39,17 @@
   </head>
   <body class="bg-Pale_Navy md:h-screen md:grid md:place-content-center">
     <main
-      class="bg-White max-w-[928px] max-h-[640px] mt-6 grid grid-cols-2 gap-20 rounded-[36px]"
+      class="bg-White max-w-[928px] md:grid md:grid-cols-2 md:gap-20 md:rounded-[36px]"
     >
-      <section class="flex flex-col mt-[98px] ml-16">
-        <h1 class="text-[3.5rem] text-Dark_Navy font-bold mb-6">
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="modern art fill image"
+        class="w-full md:hidden"
+      />
+      <section class="flex flex-col mx-6 md:ml-16">
+        <h1
+          class="text-[40px] leading-none text-Dark_Navy font-bold mb-6 mt-10 md:text-[3.5rem]"
+        >
           Stay updated!
         </h1>
         <p class="mb-6 text-Dark_Navy text-base font-normal">
@@ -97,13 +104,13 @@
           />
           <button
             id="subscribe-button"
-            class="rounded-lg bg-Dark_Navy text-white py-4 mb-[98px] hover:bg-Tomato hover:text-white transition duration-300 ease-in-out"
+            class="rounded-lg bg-Dark_Navy text-white py-4 mb-10 hover:bg-Tomato hover:text-white transition duration-300 ease-in-out"
           >
             Subscribe to monthly newsletter
           </button>
         </form>
       </section>
-      <section>
+      <section class="hidden md:block">
         <img
           src="./assets/images/illustration-sign-up-desktop.svg"
           alt="modern art fill image"
@@ -111,7 +118,7 @@
         />
       </section>
     </main>
-    <footer class="text-white mt-6 flex justify-between">
+    <footer class="text-white mt-6 justify-between hidden md:flex">
       <p class="challenge">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
